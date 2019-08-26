@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>超级战神系列</title>
+    <link rel="stylesheet" href="css/BJ-list.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/vue.js"></script>
+    <!-- <script src="js/router.js"></script> -->
+    <!-- <script src="js/js.js"></script> -->
+</head>
+<body>
+    <div id="BJ-list">
+        <header id="header"></header>
+        <div class="content">
+          <div class="list-title-map">
+            <img src="./img/desktop.png" alt="">
+          </div>
+            <!-- <div class="product-top">
+              <form action="#"  class="product-top-nav">
+              <label for="quanbu">
+                <input type="radio" id="quanbu" name="aa" onclick="All()">全部
+              </label>
+              <label for="chaoji">
+                <input type="radio" id="chaoji" name="aa" checked onclick="superList()">超级战神系列
+              </label>
+              <label for="zhanshen">
+                <input type="radio" id="zhanshen" name="aa" onclick="god()">战神系列
+              </label>
+              <label for="youya">
+                <input type="radio" id="youya" name="aa" onclick="grace()">优雅系列
+              </label>
+              <label for="jingdun">
+                <input type="radio" id="jingdun" name="aa" onclick="hasse()">精盾系列
+              </label>
+            </form>
+            <div class="product-search">
+              <input type="text" class="search-text">
+              <a class="btn-search" href="#">
+                <button class="search-btn">搜索</button>
+              </a>
+              
+            </div>
+            <div class="both"></div> -->
+            <div class="product-list" id="desktop-list" >
+              <ul class="product-list-ul desktop-ul" id="list1">
+                <li class="product-list-tab desktop-list" v-for="(item,key) in list" >
+                  <a class="list-a" href="#">
+                    <h4>{{item.title}}</h4>
+                    <p>{{item.subtitle}}</p>
+                    <img :src="'http://127.0.0.1:8080/img/'+item.img" alt="">
+                  </a>
+                </li>
+              </ul>
+             
+            </div>
+            
+            <div class="list-bom">
+              <a class="list-bom-a" href="javascript:;"><</a>
+              <a id="reach-list1" class="active list-bom-a" href="javascript:;" >1</a>
+              <!-- <a class="list-bom-a" href="./BJ-list2.html" id="reach-list2">2</a>
+              <a class="list-bom-a" href="./BJ-list3.html" id="reach-list3">3</a> -->
+              <a class="list-bom-a" href="./BJ-list2.html">></a>
+              <span class="list-bom-span">跳转到：</span>
+              <input class="list-bom-input" type="text" id="kuang">
+              <a class="list-bom-a" href="javascript:;" id="jump" onclick="btn()">确定</a>
+            </div>
+          </div>
+         
+        </div>
+        <!-- 引入底部 -->
+        <footer id="footer"></footer>
+      </div>
+      <script>
+      $("#header").load("./header.html");
+      $("#footer").load("./footer.html");
+      new Vue({
+         el:"#desktop-list",
+         data:{
+         list:[],
+    
+        },
+        methods:{
+            loadMore(){
+            var url="http://127.0.0.1:8080/user/desktop-list";
+            axios.get(url).then(result=>{
+            this.list=result.data
+            
+            })
+            }
+        },
+        created(){
+            this.loadMore()
+        }
+        })
+       
+  </script>
+    <script>
+    function superList(){
+        location.href="./Super.html"
+      }
+      function All(){
+        location.href="./BJ-list.html"
+      }
+      function god(){
+        location.href="./God.html"
+      }
+      function grace(){
+        location.href="./Grace.html"
+      }
+      function hasse(){
+          location.href="./Hasse.html"
+      }
+    </script>
+</body>
+</html>

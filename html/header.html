@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首页头部</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css//bootstrap.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <!-- <script src="../js/bootstrap.min.js"></script> -->
+  <script src="js/router.js"></script>
+  <script src="js/js.js"></script>
+  <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="page-header">
+      <div class="page-logo">
+        <img src="../img/logo.png" alt="">
+      </div>
+      <ul class="page-nav">
+        <li class="page-nav-list " id="none1">
+          <a class="nav-content" href="./BJ-list.html" target="_blank">笔记本电脑</a>
+
+          <div class="page-none" id="page-none-one">
+              <ul class="page-none-ul">
+                <li class="page-none-list" onclick="superComputer()">
+                  <img src="../img/product1.png" alt="">
+                  <p>超级战神系列</p>
+                </li>
+                <li class="page-none-list" onclick="godComputer()">
+                    <img src="../img/product2.png" alt="">
+                    <p>战神系列</p>
+                </li>
+                <li class="page-none-list" onclick="graceComputer()">
+                    <img src="../img/product3.png" alt="">
+                    <p>优雅系列</p>
+                </li>
+                <li class="page-none-list" onclick="hasseComputer()">
+                    <img src="../img/product4.png" alt="">
+                    <p>精盾系列</p>
+                </li>
+              </ul>
+            </div>
+        </li>
+        <li class="page-nav-list" id="none2">
+          <a class="nav-content" href="./Desktop.html">台式电脑</a>
+
+
+          <div class="page-none one"  >
+              <ul class="page-none-ul" style="width: 30%;margin:0 auto;">
+                <li class="page-none-list" onclick="desktopBrand()" style="width: 35 %;">
+                  <img src="../img/product5.png" alt="">
+                  <p>品牌台式机</p>
+                </li>
+                <li class="page-none-list" onclick="godUpc()" style="width: 35%;">
+                    <img src="../img/product6.png" alt="">
+                    <p>战神UPC</p>
+                </li>
+                
+              </ul>
+            </div>
+        </li>
+        <li class="page-nav-list" id="none3">
+          <a class="nav-content" href="./ipad.html" target="_blank">PCpad</a>
+
+          <div class="page-none two" >
+              <ul class="page-none-ul">
+                <li class="page-none-list" onclick="ipadMini()">
+                  <img src="../img/product7.png" alt="">
+                  <p>PCpad Mini</p>
+                </li>
+                <li class="page-none-list" onclick="ipadPc()">
+                    <img src="../img/product8.png" alt="">
+                    <p>PCpad</p>
+                </li>
+                <li class="page-none-list" onclick="ipadPro()">
+                    <img src="../img/product9.png" alt="">
+                    <p>PCpad Pro</p>
+                </li>
+                <li class="page-none-list" onclick="ipadPlus()">
+                    <img src="../img/product10.png" alt="">
+                    <p>PCpad Plus</p>
+                </li>
+              </ul>
+            </div>
+        </li>
+        <li class="page-nav-list" id="none4">
+          <a class="nav-content" href="#">商用电脑</a>
+        </li>
+        <li class="page-nav-list" id="none5">
+          <a class="nav-content" href="#">准系统及配件</a>
+
+          <div class="page-none three"  >
+              <ul class="page-none-ul" style="width: 30%;margin:0 auto;">
+                <li class="page-none-list" style="width: 35%;">
+                  <img src="../img/product12.png" alt="">
+                  <p>显卡</p>
+                </li>
+                <li class="page-none-list" style="width: 35%;">
+                    <img src="../img/product13.png" alt="">
+                    <p>准系统</p>
+                </li>
+                
+              </ul>
+            </div>
+        </li>
+        <li class="page-nav-list" id="none6">
+          <a class="nav-content" href="#">服务与支持</a>
+        </li>
+        <li class="page-nav-list" id="none7" onclick="shopping()">
+          <a class="nav-content" href="#">网上商城</a>
+        </li>
+        <li class="page-nav-list" id="none8">
+          <a class="nav-content" href="#">社区</a>
+        </li>
+        <li class=" page-nav-list page-nav-search">
+          <input type="text" placeholder="搜索">
+        </li>
+        <li class="page-lang">
+          <p>
+            <a href="#" style="color: #333333;">中文</a>|
+            <a href="#" style="color: #999999;">English</a>
+          </p>
+        </li>
+      </ul>
+      
+    </div>
+    <script>
+      function superComputer(){
+        location.href="./Super.html"
+      }
+      function godComputer(){
+        location.href="./God.html"
+      }
+      function graceComputer(){
+        location.href="./Grace.html"
+      }
+      function hasseComputer(){
+        location.href="./Hasse.html"
+      }
+      function desktopBrand(){
+        window.open("https://mall.jd.com/index-1000000156.html?cu=true&utm_source=www.szwgmf.com&utm_medium=tuiguang&utm_campaign=t_229258170_&utm_term=8ae01cc24a33459291c7ffb8f84f0891","_blank")
+      }
+      function godUpc(){
+        window.open("https://mall.jd.com/index-1000000156.html?cu=true&utm_source=www.szwgmf.com&utm_medium=tuiguang&utm_campaign=t_229258170_&utm_term=37e1dba30cde4a6ab3490fa3163738af","_blank")
+      }
+      function ipadMini(){
+        window.open("https://mall.jd.com/index-1000083266.html?cu=true&utm_source=www.szwgmf.com&utm_medium=tuiguang&utm_campaign=t_229258170_&utm_term=d650ed4b25b641f8869881ad6d5840f8","_blank")
+      }
+      function ipadPc(){
+        window.open("https://mall.jd.com/index-1000083266.html?cu=true&utm_source=www.szwgmf.com&utm_medium=tuiguang&utm_campaign=t_229258170_&utm_term=2020d0d459234f8ab9e73573df629555","_blank")
+      }
+      function ipadPro(){
+        window.open("http://z.jd.com/project/details/17350.html","_blank")
+      }
+      function ipadPlus(){
+        window.open("http://z.jd.com/project/details/17350.html","_blank")
+      }
+      function shopping(){
+        window.open("http://www.hasee.net/","_blank")
+      }
+    </script>
+</body>
+</html>

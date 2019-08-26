@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.both{
+  clear: both;
+}
+#BJ-list{
+  width: 100%;
+  min-width: 1580px;
+  /* border: 1px solid yellow; */
+}
+.content{
+  width: 100%;
+  /* border: 1px solid red; */
+}
+/*笔记本列表页下面的头部*/
+.list-title-map{
+  width: 100%;
+  height: 210px;
+}
+.list-title-map>img{
+  width: 100%;
+  height: 100%;
+}
+/*笔记本列表页商品的头部*/
+.product-top{
+  width: 80%;
+  margin: 0 auto;
+  /* border: 1px solid green; */
+  margin-top: 35px;
+  
+ 
+}
+.product-top>form{
+  width: 40%;
+  float: left;
+  line-height: 30px;
+}
+.product-top-nav>label:not(:first-child){
+  margin-left: 2%;
+}
+.product-top-nav>label{
+  font-size: 16px;
+  color: #666666;
+  vertical-align: middle;
+}
+/*笔记本列表商品头部右边的搜索框*/
+.product-search{
+  width: 40%;
+  height: 36px;
+  float: right;
+}
+.search-text{
+  width: 70%;
+  height: 35px;
+  border: none;
+  border: 1px solid #ccc;
+  line-height: 33px;
+  border-radius: 6px;
+}
+/*搜索按钮*/
+.btn-search{
+  display: block;
+  width: 15%;
+  height: 35px;
+  float: right;
+  margin-right: 14%;
+  border-radius: 6px;
+  background: #FFE110;
+}
+.search-btn{
+  width: 100%;
+  height: 35px;
+  color: #333333;
+  border: none;
+  padding-left: 10px;
+  /* background: #FFE110; */
+  background: url(../img/search-icon.png) no-repeat;
+  background-size: 30% 80%;
+  background-position-x: 5%;
+  background-position-y: 45%;
+  font-size: 14px;
+}
+
+/*笔记本列表*/
+.product-list{
+  width: 100%;
+  height: 750px;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  position: relative;
+}
+.product-list-ul{
+  height: 750px;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/*台式电脑列表*/
+#desktop-list{
+  height: 250px;
+  border: none;
+}
+.desktop-ul{
+  width: 70%;
+  height: 250px;
+  margin-left: 15%;
+  margin-top: 15px;
+}
+.desktop-list{
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.product-list-tab{
+  width: 25%;
+  height: 250px;
+  float: left;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.list-a{
+  display: inline-block;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+.list-a>h4{
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+  margin-top: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-a>p{
+  color: #999;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-a>img{
+  width: 70%;
+  height: 140px;
+}
+/*列表下面跳转页面*/
+.list-bom{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin: 40px auto;
+}
+.list-bom-a{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 29px;
+  color: #727272;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 5px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  font-family: SimSun;
+  background: #fafafc;
+}
+.list-bom-span{
+  font-size: 14px;
+  color: #666;
+  margin: 0 5px;
+  margin-left: 20px;
+}
+.list-bom-input{
+  width: 48px;
+  height: 30px;
+  margin: 0 5px;
+  text-indent: 4px;
+  border: 1px solid #ddd;
+}
+.list-bom-a:hover{
+  background-color: #727272;
+  color: #ffffff;
+}
+.active{
+  background-color: #727272;
+  color: #ffffff;
+}
